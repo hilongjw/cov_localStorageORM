@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>cov localStroage ORM</title>
+</head>
+
+<body>
+
+    <script src="src/dist/cov.js"></script>
+    <script>
+    var student = new Cov('student');
+
+    student.init({
+        id: "",
+        name: "",
+        classes: ""
+    });
+    student.create({
+        name: 'longyi',
+        classes: 'class1'
+    });
+    console.log(student.findOne({
+        name: "longyi",
+        classes: "class1"
+    }));
+    console.log(student.remove({
+        id: 0
+    }));
+    console.log(student.update({
+        name: "longyi",
+        classes: "class1"
+    }, {
+        name: "啊哈哈"
+    }));
+    </script>
+</body>
+
+</html>
