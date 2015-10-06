@@ -34,13 +34,13 @@
     student.update({
         name: "tom"
     }, {
-        class: "class2"
+        classes: "class2"
     })
     
     student.updateAll({
-        class: "class1"
+        classes: "class1"
     }, {
-        class: "1班"
+        classes: "class2"
     })
     
 ### remove
